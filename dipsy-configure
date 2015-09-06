@@ -16,21 +16,19 @@ Raspberry PI (excerpt from https://github.com/piface/pifacecommon/blob/master/do
 	21 = MISO
 	20 = GND
 	19 = MOSI
-	18 = CDONE
+	18 = DONE
 	17 = +3.3V
 	16 = SS
 
 Intel Edison Arduino breakout:
 1. Update to the latest version as of 2015-09-05.
 2. Pinout on J1B1:
-	 7 = RESET
-	 8 = DONE
-	 9 = SS
-	10 = SS (SPI HW, not used)
+	 8 = RESET
+	 9 = DONE
+	10 = SS
 	11 = MOSI
 	12 = MISO
 	13 = SCK
-
 """
 
 def split_by_size(s,n):
@@ -105,9 +103,9 @@ else:
 		import mraa
 		intel_edison = 1
 		print("Intel Edison detected.")
-		_CRESET_PIN     = mraa.Gpio(7)
-		_CDONE_PIN      = mraa.Gpio(8)
-		_SS_PIN         = mraa.Gpio(9)
+		_CRESET_PIN     = mraa.Gpio(8)
+		_CDONE_PIN      = mraa.Gpio(9)
+		_SS_PIN         = mraa.Gpio(10)
 		# For some reason, HW SPI didn't work.
 		_MOSI_PIN	= mraa.Gpio(11)
 		_MISO_PIN	= mraa.Gpio(12)
@@ -123,6 +121,7 @@ else:
 			_SCK_PIN.dir(mraa.DIR_OUT)
 
 			try:
+				_CRESET_PIN.write(1)
 				_CRESET_PIN.write(0)
 				_SS_PIN.write(0)
 				_MOSI_PIN.write(0)
@@ -139,7 +138,7 @@ else:
 						_MOSI_PIN.write((b >> (7-bit)) & 1)
 						_SCK_PIN.write(1)
 						_SCK_PIN.write(0)
-				time.sleep(0.2)
+				time.sleep(0.01)
 				done = _CDONE_PIN.read()
 				_SS_PIN.write(1)
 			finally:
