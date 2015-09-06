@@ -12,7 +12,7 @@ Raspberry PI
 Steps:
 <ol>
 <li>
-Remove "spi-bcm2708" from the blacklist in /etc/modprobe.d/raspi-blacklist.conf or (kernel 3.18 or newer): add dtparam=spi=on to /boot/config/txt
+Either remove "spi-bcm2708" from the blacklist in /etc/modprobe.d/raspi-blacklist.conf or (kernel 3.18 or newer): add dtparam=spi=on to /boot/config/txt
 </li>
 <li>
 Reboot or modprobe spi-bcm2708
