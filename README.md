@@ -16,3 +16,13 @@ Raspberry PI (excerpt from https://github.com/piface/pifacecommon/blob/master/do
 	17 = +3.3V
 	16 = SS
 
+Intel Edison Arduino breakout:
+1. Update to the latest version as of 2015-09-05.
+2. Pinout on J1B1:
+	 7 = RESET
+	 8 = DONE
+	 9 = SS
+	10 = SS (SPI HW, not used)
+	11 = MOSI
+	12 = MISO
+	13 = SCK
