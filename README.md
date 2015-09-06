@@ -23,7 +23,7 @@ Source: https://github.com/piface/pifacecommon/blob/master/docs/installation.rst
 
 Pinout on P1:<table>
 <tr>
-	<td>P1</td><td>DIPSY</td>
+	<th>P1</th><th>DIPSY</th>
 </tr>
 	<td>25</td><td>GND</td>
 </tr>
@@ -62,7 +62,7 @@ Update to the latest version as of 2015-09-05.
 
 Pinout:<table>
 <tr>
-	<td>J1B1</td><td>DIPSY</td>
+	<th>J1B1</th><th>DIPSY</th>
 </tr>
 <tr>
 	 <td>8</td><td>RESET</td>
@@ -91,7 +91,7 @@ Tested on revision A3, with Debian (BeagleBone, BeagleBone Black - 4GB SD) 2015-
 
 Pinout on P9:<table>
 <tr>
-	<td>P9</td><td>DIPSY</td>
+	<th>P9</th><th>DIPSY</th>
 </tr>
 <tr>
 	<td>1,2</td> = <td>GND</td>
@@ -103,7 +103,7 @@ Pinout on P9:<table>
 
 Pinout on P8:<table>
 <tr>
-	<td>P8</td><td>DIPSY</td>
+	<th>P8</th><th>DIPSY</th>
 </tr>
 <tr>
 	 <td>8</td><td>RESET</td>
