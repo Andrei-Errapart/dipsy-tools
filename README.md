@@ -25,3 +25,15 @@ Intel Edison Arduino breakout:
 	11 = MOSI
 	12 = MISO
 	13 = SCK
+
+Beaglebone (tested on revision A3):
+1. Update to the latest Debian image.
+2. Pinout on P9
+	1,2 = GND
+	3,4 = +3.3V
+   Pinout on P8
+	 8 = RESET
+	10 = SS
+	12 = DONE
+	14 = MOSI
+	16 = SCK
