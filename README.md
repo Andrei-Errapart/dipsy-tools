@@ -25,10 +25,8 @@ Pinout on P1:<table>
 <tr>
 	<th>P1</th><th>DIPSY</th>
 </tr>
-	<td>25</td><td>GND</td>
-</tr>
 <tr>
-	<td>24</td><td>SS (SPI HW)</td>
+	<td>25</td><td>GND</td>
 </tr>
 <tr>
 	<td>23</td><td>SCLK</td>
