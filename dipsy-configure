@@ -10,7 +10,6 @@ Raspberry PI (excerpt from https://github.com/piface/pifacecommon/blob/master/do
 2. Reboot or modprobe spi-bcm2708
 3. Pinout on P1:
 	25 = GND
-	24 = SS (SPI HW, not used)
 	23 = SCLK
 	22 = RESET
 	21 = MISO
