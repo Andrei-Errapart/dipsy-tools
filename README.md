@@ -1,7 +1,8 @@
 Introduction
 ============
 
-Tools for the DIPSY (a sub-5 USD FPGA board).
+Tools for the DIPSY, a sub-5 USD FPGA board.
+See the homepage at https://hackaday.io/project/6592-dipsy .
 
 Included are:
 * dipsy-configure: Download configuration over SPI to the FPGA board.
